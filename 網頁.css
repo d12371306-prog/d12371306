@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(12, 3, 51, 0.3),
+      rgba(12, 3, 51, 0.3)
+  );
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  nav {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      padding: 20px 8%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    nav .logo{
+      width: 150px;
+    }
+    nav ul li{
+      list-style: none;
+      display: inline-block;
+      margin-left: 40px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 17px;
+    }
+
+    }
+    .back-video {
+      position: fixed;        
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;            
+      object-fit: cover;       
+    }
+    .center-box {
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 1200px;        
+      height: 550px;       
+      border: 2px solid rgba(255, 255, 255, 0.6);  
+      background: rgba(255, 255, 255, 0.1);        
+      backdrop-filter: blur(6px);                  
+      border-radius: 10px;
+      z-index: 10;
+    
+      /* 這裡是文字設定 */
+      color: #fff;         
+      font-size: 15px;
+      font-weight: 300;
+      line-height: 1.6;
+      text-align: center;
+    
+      /* ✅ 把這些放進來 */
+      display: flex;
+      flex-direction: column; 
+      align-items: center;    
+      justify-content: center;
+      padding: 40px;
+    }
+    
+    /* 影片樣式 */
+    .intro-video {
+      width: 70%;           
+      border-radius: 10px;
+      margin-top: 20px;
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+    
+      
