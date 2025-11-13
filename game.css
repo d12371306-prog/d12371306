@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(
+      rgba(12, 3, 51, 0.3),
+      rgba(12, 3, 51, 0.3)
+  );
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  nav {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      padding: 20px 8%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    nav .logo{
+      width: 150px;
+    }
+    nav ul li{
+      list-style: none;
+      display: inline-block;
+      margin-left: 40px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 17px;
+    }
+
+    }
+    .back-video {
+      position: fixed;        
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;            
+      object-fit: cover;       
+    }
+    .center-box {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1200px;
+  height: 550px;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+  z-index: 10;
+
+  /* 文字樣式 */
+  color: #fff;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.6;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* 🔹 圖片橫排排列 */
+.band-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* 圖片間距 */
+  flex-wrap: wrap; /* 若太多自動換行 */
+  margin-top: 20px;
+}
+.band-list {
+  display: flex;
+  flex-wrap: wrap;               /* 自動換行 */
+  justify-content: center;       /* 水平置中 */
+  align-items: flex-start;
+  gap: 20px;                     /* 每個項目之間的間距 */
+  margin-top: 30px;
+}
+
+.band {
+  text-align: center;
+  color: white;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 15px;
+  width: 180px;                  /* 每個卡片寬度 */
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.1);
+}
+
+.band:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(231, 188, 231, 0.6);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.band img {
+  width: 100px;                  /* ✅ 縮小圖片大小 */
+  height: 120px;
+  object-fit: cover;             /* 保持圖片比例並裁切 */
+  border-radius: 10px;
+  margin-top: 10px;
+  transition: box-shadow 0.3s;
+}
+
+.band img:hover {
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);  /* 霓虹發光效果 */
+}
+
+.band a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  margin-top: 8px;
+  transition: color 0.3s;
+}
+
+.band a:hover {
+  color: #00ffff;
+}
+
+/* 🔹 每個音樂項目 */
+.band {
+  text-align: center;
+  color: white;
+}
+
+/* 🔹 圖片樣式 */
+.band img {
+  width: 100px;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: transform 0.3s;
+}
+
+.band img:hover {
+  transform: scale(1.05);
+}
+
+/* 🔹 影片樣式 */
+.intro-video {
+  width: 70%;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+}
+    
+      
